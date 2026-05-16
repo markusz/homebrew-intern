@@ -1,22 +1,22 @@
 class Intern < Formula
   desc "Linter for PowerPoint files — catches misaligned boxes, inconsistent fonts, and sloppy text"
   homepage "https://github.com/markusz/intern"
-  version "0.2.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/markusz/intern/releases/download/v#{version}/intern-aarch64-apple-darwin.tar.gz"
-      sha256 "09b45a5577edf89b2399065361be633a4f5e1b50a2fb775eadf1a32df7f60ab1"
+      sha256 "894605cc0ddf7ea94f69bad4fa537ab05bf9024ffe34d5afd83a735574967959"
     else
       url "https://github.com/markusz/intern/releases/download/v#{version}/intern-x86_64-apple-darwin.tar.gz"
-      sha256 "3e3b7df212f2fd093478d64255cc8de9bf6fa8806bc3d268b7b81658dcc0acc2"
+      sha256 "d3a70a586dcb183130c7c2b62d156ac03a6ce5c888f22d0a3d14377aa6ff3e8c"
     end
   end
 
   on_linux do
     url "https://github.com/markusz/intern/releases/download/v#{version}/intern-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "4f5c0c75cdee1b87e1b19daa01683e322858e1fac537b7552f58a30f5dc47010"
+    sha256 "7ee18b69cc31dd1583eea5a3200455b2a9196cac8b7a14352c85d4080a2baa9e"
   end
 
   def install
